@@ -1,4 +1,4 @@
-% my $max_children = 20;
+# % my $max_children = 20;
 % my @parents;
 % my @parents_with_references;
 % my @children_with_references;
@@ -9,7 +9,7 @@
     % @parents = $pub->get_parents;
     % @children = $pub->children;
     % @parents_with_references = $pub->get_parents_with_references;
-    % @children_with_references = $pub->get_children_with_references((param 'show_all') ? () : (limit => $max_children));
+    % @children_with_references = $pub->get_children_with_references((param "?all=1") ? );
     % $references_url = $pub->references_url($self);
 % }
 
